@@ -18,6 +18,9 @@ jobs:
     - name: Build success
       run: echo "CI Pipeline successful"
 
+    - name: Automation Test
+      run: echo "Automation Test Successful"
+
     - name: Slack Notification
       run: |
         curl -X POST -H 'Content-type: application/json' \
