@@ -26,3 +26,4 @@ jobs:
         curl -X POST -H 'Content-type: application/json' \
         --data '{"text":"GitHub Actions Build Successful"}' \
         ${{ secrets.SLACK_WEBHOOK }}
+        <p>Automation Working Successfully</p>
