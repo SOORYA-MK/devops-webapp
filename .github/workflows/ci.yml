@@ -12,18 +12,17 @@ jobs:
 
     steps:
 
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Build success
-      run: echo "CI Pipeline successful"
+      - name: Build success
+        run: echo "CI Pipeline successful"
 
-    - name: Automation Test
-      run: echo "Automation Test Successful"
+      - name: Automation Test
+        run: echo "Automation Test Successful"
 
-    - name: Slack Notification
-      run: |
-        curl -X POST -H 'Content-type: application/json' \
-        --data '{"text":"GitHub Actions Build Successful"}' \
-        ${{ secrets.SLACK_WEBHOOK }}
-        <p>Automation Working Successfully</p>
+      - name: Slack Notification
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{"text":"GitHub Actions Build Successful"}' \
+          ${{ secrets.SLACK_WEBHOOK }}
